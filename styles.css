@@ -1,1 +1,204 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+}
+
+a:hover {
+    border-top: 3px solid black;
+    cursor: pointer;
+}
+
+a:active {
+    color: gray;
+    border-top: 2px solid gray;
+}
+
+/* Images */
+
+img:hover {
+    box-shadow: 4px 4px;
+}
+
+.bio img:hover {
+    box-shadow: none;
+}
+
+/* Separators */
+
+.separator {
+    width: 100%;
+    height: 4px;
+    border: 4px solid black;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 150px;
+}
+
+h2 {
+    border-bottom: 3px solid black;
+    border-radius: 1px;
+    padding: 5px 0;
+}
+
+/* Header */
+
+header {
+    height: 500px;
+    background-image: url("C:\Users\stoya\Desktop\rosie\OIP (1).jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav ul {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+#myportfolio {
+    text-align: center;
+    margin: 50px 0 150px;
+    border: none;
+}
+
+/* Main */
+
+main, footer {
+    margin: 80px 5% 30px;
+}
+
+/* Section */
+
+section {
+    margin-top: 60px;
+}
+
+/* Article General */
+
+.h2span {
+    display: none;
+}
+
+.h3span {
+    float: right;
+    font-size: small;
+    vertical-align: baseline;
+}
+
+.bio, .photos, .videos, .graphic {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Bio Article */
+
+#bioarticle {
+    align-items:flex-start;
+}
+
+.bio > * {
+    width: 50%;
+}
+
+/* Photos Article */
+
+.photos figure, .graphic figure, .vidcontainer {
+    flex: 1;
+}
+
+.photos figure img, .graphic figure img, .vidcontainer video {
+    width: 100%;
+}
+
+.photoheading {
+    width: 25%;
+}
+
+
+@media (max-width: 900px) {
+    .bio {
+        flex-direction: column;
+    }
+
+    .bio img {
+        width: 100%;
+        flex: 1;
+    }
+
+    .photos, .videos, .graphic {
+        flex-direction: column;
+    }
+
+    h3 {
+        margin-top: 30px;
+        text-align: center;
+        border-top: 2px solid black;
+    }
+
+    .h3span {
+        display: none;
+    }
+
+    .h2span {
+        display: inline;
+        font-size: small;
+        vertical-align: middle;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        background-color: gray;
+        padding: 10px;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+    h2 {
+        border: none;
+    }
+}
+
+footer p {
+    text-align: center;
+    font-size: small;
+}
