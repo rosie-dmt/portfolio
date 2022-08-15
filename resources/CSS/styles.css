@@ -16,10 +16,10 @@ a {
     color: black;
 }
 
+
 a:visited {
     text-decoration: none;
-    text-transform: uppercase;
-    color: gray;
+    color: darkgray;
 }
 
 a:hover {
@@ -30,6 +30,15 @@ a:hover {
 a:active {
     color: gray;
     border-top: 2px solid gray;
+}
+
+.contentlinks {
+    text-transform: none;
+    width: 25%;
+}
+
+.h2links {
+    text-transform: none;
 }
 
 /* Images */
@@ -63,11 +72,15 @@ h2 {
     padding: 5px 0;
 }
 
+.contentlinks h3 {
+    width: 100%;
+}
+
 /* Header */
 
 header {
     height: 500px;
-    background-image: url("C:\Users\stoya\Desktop\rosie\OIP (1).jfif");
+    background-image: url("../images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -111,7 +124,7 @@ section {
     vertical-align: baseline;
 }
 
-.bio, .photos, .videos, .graphic {
+.bio, .photos, .videos, .print {
     margin-top: 20px;
     display: flex;
     gap: 30px;
@@ -134,16 +147,48 @@ section {
 
 /* Photos Article */
 
-.photos figure, .graphic figure, .vidcontainer {
+.photos figure, .print figure, .vidcontainer {
     flex: 1;
 }
 
-.photos figure img, .graphic figure img, .vidcontainer video {
+.photos figure img, .print figure img, .vidcontainer iframe {
     width: 100%;
 }
 
 .photoheading {
     width: 25%;
+}
+
+.photoheading2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-top: 3px solid black;
+}
+
+.photos_main {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.photos_main .photos_child {
+    flex: 1 0 30%;
+}
+
+/* Videos Article */
+
+.vidcontainer iframe {
+    height: calc(100vh - 500px);
+}
+
+/* Print Article */
+
+.print_main {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.print_main .print_child {
+    flex: 1 0 30%;
 }
 
 
@@ -158,7 +203,7 @@ section {
 
     nav ul li {
         margin-bottom: 10px;
-        background-color: gray;
+        background-color: lemonchiffon;
         padding: 10px;
     }
 
@@ -178,6 +223,12 @@ section {
         border-top: 2px solid black;
     }
 
+    .photoheading2 {
+        width: 100%;
+        padding: 10px;
+        border-top: 3px solid black;
+    }
+
     /* Spans */
 
     .h3span {
@@ -192,7 +243,7 @@ section {
 
     /* Articles General */
 
-    .photos, .videos, .graphic {
+    .photos, .videos, .print {
         flex-direction: column;
     }
 
@@ -206,6 +257,13 @@ section {
         width: 100%;
         flex: 1;
     }
+
+    /* Photos, Print, & Videos Articles */
+
+    .photos figure, .print figure, .vidcontainer {
+        width: 100%;
+    }
+
 }
 
 footer p {
