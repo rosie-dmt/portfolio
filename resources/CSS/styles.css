@@ -148,35 +148,8 @@ section {
 
 
 @media (max-width: 900px) {
-    .bio {
-        flex-direction: column;
-    }
-
-    .bio img {
-        width: 100%;
-        flex: 1;
-    }
-
-    .photos, .videos, .graphic {
-        flex-direction: column;
-    }
-
-    h3 {
-        margin-top: 30px;
-        text-align: center;
-        border-top: 2px solid black;
-    }
-
-    .h3span {
-        display: none;
-    }
-
-    .h2span {
-        display: inline;
-        font-size: small;
-        vertical-align: middle;
-    }
-
+    /* Header */
+    
     nav ul {
         flex-direction: column;
         text-align: center;
@@ -189,12 +162,49 @@ section {
         padding: 10px;
     }
 
+    /* Headings */
+
     h1 {
         margin-top: 20px;
     }
 
     h2 {
         border: none;
+    }
+
+    h3 {
+        margin-top: 30px;
+        text-align: center;
+        border-top: 2px solid black;
+    }
+
+    /* Spans */
+
+    .h3span {
+        display: none;
+    }
+
+    .h2span {
+        display: inline;
+        font-size: small;
+        vertical-align: middle;
+    }
+
+    /* Articles General */
+
+    .photos, .videos, .graphic {
+        flex-direction: column;
+    }
+
+    /* Bio Article */
+
+    .bio {
+        flex-direction: column;
+    }
+
+    .bio img {
+        width: 100%;
+        flex: 1;
     }
 }
 
