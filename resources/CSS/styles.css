@@ -38,10 +38,6 @@ img:hover {
     box-shadow: 4px 4px;
 }
 
-.bio img:hover {
-    box-shadow: none;
-}
-
 /* Separators */
 
 .separator {
@@ -103,7 +99,7 @@ section {
     margin-top: 60px;
 }
 
-/* Article General */
+/* Articles General */
 
 .h2span {
     display: none;
@@ -130,6 +126,10 @@ section {
 
 .bio > * {
     width: 50%;
+}
+
+.bio img:hover {
+    box-shadow: none;
 }
 
 /* Photos Article */
