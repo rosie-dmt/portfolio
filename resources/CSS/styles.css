@@ -8,6 +8,19 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+figcaption {
+    font-style: italic;
+}
+
+p, .paragraph ul {
+    line-height: 1.2em;
+    margin-top: 1.2em;
+}
+
+.paragraph h3 {
+    margin-bottom: 1.6em;
+}
+
 /* Links */
 
 a {
@@ -16,10 +29,14 @@ a {
     color: black;
 }
 
+nav a {
+    background-color: white;
+    padding: 5px 20px;
+}
 
 a:visited {
     text-decoration: none;
-    color: darkgray;
+    color: gray;
 }
 
 a:hover {
@@ -28,13 +45,12 @@ a:hover {
 }
 
 a:active {
-    color: gray;
+    color: darkgray;
     border-top: 2px solid gray;
 }
 
 .contentlinks {
     text-transform: none;
-    width: 25%;
 }
 
 .h2links {
@@ -50,20 +66,19 @@ img:hover {
 /* Separators */
 
 .separator {
-    width: 100%;
-    height: 4px;
-    border: 4px solid black;
-    border-radius: 4px;
-    margin-top: 20px;
+    display: none;
 }
 
 /* Headings */
 
 h1 {
-    font-size: 36px;
+    font-size: 38px;
     text-transform: uppercase;
     text-align: center;
     margin-top: 150px;
+    font-family: new-hero, sans-serif;
+    font-style: normal;
+    font-weight: 900;
 }
 
 h2 {
@@ -94,10 +109,18 @@ nav ul {
     justify-content: space-between;
 }
 
+nav ul li {
+    font-size: 16px;
+}
+
 #myportfolio {
     text-align: center;
-    margin: 50px 0 150px;
+    letter-spacing: 0.2em;
+    margin: 30px 0 150px;
     border: none;
+    font-family: ccmonstermash, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* Main */
@@ -127,19 +150,19 @@ section {
 .bio, .photos, .videos, .print {
     margin-top: 20px;
     display: flex;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
 }
 
 /* Bio Article */
 
-#bioarticle {
+/* #bioarticle {
     align-items:flex-start;
-}
+} */
 
-.bio > * {
-    width: 50%;
-}
+/* .bio > * {
+    flex: 1;
+} */
 
 .bio img:hover {
     box-shadow: none;
@@ -147,17 +170,17 @@ section {
 
 /* Photos Article */
 
-.photos figure, .print figure, .vidcontainer {
+.bio > *, .photos > *, .print > *, .vidcontainer {
     flex: 1;
 }
 
-.photos figure img, .print figure img, .vidcontainer iframe {
+.bio figure img, .photos figure img, .print figure img, .vidcontainer iframe {
     width: 100%;
 }
 
-.photoheading {
+/* .photoheading {
     width: 25%;
-}
+} */
 
 .photoheading2 {
     margin-top: 50px;
@@ -177,7 +200,7 @@ section {
 /* Videos Article */
 
 .vidcontainer iframe {
-    height: calc(100vh - 500px);
+    height: calc(100vh - 350px);
 }
 
 /* Print Article */
@@ -202,9 +225,10 @@ section {
     }
 
     nav ul li {
+        width: 100%;
         margin-bottom: 10px;
-        background-color: lemonchiffon;
         padding: 10px;
+        /* background-color: lemonchiffon; */
     }
 
     /* Headings */
@@ -213,20 +237,39 @@ section {
         margin-top: 20px;
     }
 
-    h2 {
-        border: none;
-    }
+    /* h2 {
+        border-bottom: 3px solid black;
+        border-radius: 1px;
+    } */
 
     h3 {
         margin-top: 30px;
         text-align: center;
-        border-top: 2px solid black;
+        background-color: white;
+        /* border-top: 2px solid black; */
     }
 
     .photoheading2 {
         width: 100%;
         padding: 10px;
-        border-top: 3px solid black;
+        /* border-top: 3px solid black; */
+    }
+
+    /* .separator {
+        display: block;
+        width: 100%;
+        height: 4px;
+        border: 4px solid black;
+        border-radius: 4px;
+        margin-top: 20px;
+    } */
+
+    /* .contentlinks {
+        display: block;
+    } */
+
+    .contentlinks:hover {
+        border-top: none;
     }
 
     /* Spans */
@@ -253,8 +296,8 @@ section {
         flex-direction: column;
     }
 
-    .bio img {
-        width: 100%;
+    .bio > * {
+        /* width: 100%; */
         flex: 1;
     }
 
