@@ -10,15 +10,29 @@ body {
 
 figcaption {
     font-style: italic;
+    display: none;
 }
 
 p, .paragraph ul {
-    line-height: 1.2em;
-    margin-top: 1.2em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
 }
 
 .paragraph h3 {
     margin-bottom: 1.6em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* .checkmark li {
+    list-style-type: none;
+} */
+
+.checkmark li::marker {
+    content: "✓ ";
+    font-size: 1em;
 }
 
 /* Links */
