@@ -37,6 +37,11 @@ p, .paragraph ul {
 
 /* Links */
 
+#email {
+    text-transform: none;
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
     text-transform: uppercase;
@@ -48,14 +53,27 @@ nav a {
     padding: 5px 20px;
 }
 
+
 a:visited {
     text-decoration: none;
     color: gray;
 }
 
+#email:visited {
+    color: blue;
+}
+
 a:hover {
     border-top: 3px solid black;
     cursor: pointer;
+}
+
+#email:hover {
+    border-top: none;
+}
+
+#nav2:hover {
+    border: none;
 }
 
 a:active {
@@ -90,9 +108,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     margin-top: 150px;
-    font-family: new-hero, sans-serif;
-    font-style: normal;
-    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
@@ -130,16 +146,14 @@ nav ul li {
 #myportfolio {
     text-align: center;
     letter-spacing: 0.2em;
-    margin: 30px 0 150px;
+    margin: 20px 0 150px;
     border: none;
-    font-family: ccmonstermash, sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 /* Main */
 
-main, footer {
+main {
     margin: 80px 5% 30px;
 }
 
@@ -323,7 +337,21 @@ section {
 
 }
 
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 footer p {
     text-align: center;
     font-size: small;
+    margin: auto;
+}
+
+#footer {
+    padding-top: 25px;
 }
